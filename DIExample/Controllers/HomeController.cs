@@ -1,4 +1,4 @@
-using DIExample.Models;
+
 using Microsoft.AspNetCore.Mvc;
 using ServiceContract;
 using Services;
@@ -29,15 +29,6 @@ namespace DIExample.Controllers
             return View(cities);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }
