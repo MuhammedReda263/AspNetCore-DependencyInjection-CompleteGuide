@@ -1,0 +1,17 @@
+﻿@model IEnumerable<string>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>Home Page</p>
+
+<ul class="list-group">
+    @foreach(var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<h2>@ViewBag.instance1</h2>
+<h2>@ViewBag.instance2</h2>
+<h2>@ViewBag.instance3</h2>
